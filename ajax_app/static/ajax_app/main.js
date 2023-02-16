@@ -1,0 +1,1 @@
+const getNumber = () => console.log('Hello World!')

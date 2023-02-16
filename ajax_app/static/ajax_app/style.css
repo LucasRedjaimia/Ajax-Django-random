@@ -1,0 +1,140 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background: rgb(222,208,190);
+    background: linear-gradient(0deg, rgba(222,208,190,1) 0%, rgba(255,225,198,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+button {
+    width: 150px;
+}
+
+.remove {
+    background-color: transparent;
+    width: auto;
+    border: none;
+    color: red;
+    padding: 5px 10px;
+    padding-right: 15px;
+    transition: all .3s;
+    border-right: .5px solid black;
+    font-size: 22px;
+}
+
+.remove:hover {
+    color: rgb(182, 0, 0);
+}
+
+.add {
+    background-color: transparent;
+    color: rgb(0, 179, 0);
+    border-radius: 5px;
+    width: auto;
+    border: none;
+    padding: 5px 10px;
+    transition: all .3s;
+    font-size: 22px;
+}
+
+.add:hover {
+    color: rgb(0, 214, 0);
+}
+
+.buttons {
+    background-color: white;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.left {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    height: 40vh;
+    width: 20%;
+    background-color: rgb(197, 161, 150);
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 8px 21px 5px rgba(0,0,0,0.31);
+}
+
+.left li {
+    list-style-type: none;
+    background-color: antiquewhite;
+    border: .5px solid grey;
+    padding: 5px 0 5px 0px;
+}
+
+ul.left {
+    padding: 0;
+}
+
+.right {
+    position: absolute;
+    right: 25%;
+    top: 10%;
+    height: 40vh;
+    width: 20%;
+    padding: 0;
+    background-color:rgb(197, 161, 150);
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 3px 8px 21px 5px rgba(0,0,0,0.31);
+}
+
+.right li {
+    list-style-type: none;
+    background-color: antiquewhite;
+    border: .5px solid grey;
+}
+
+.init_title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.init_phrase {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tag {
+    width: 20%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+p {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background:rgb(197, 161, 150);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: antiquewhite;
+    border-radius: 10px;
+  }

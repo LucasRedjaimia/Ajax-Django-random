@@ -1,0 +1,14 @@
+{% if i %}
+    <li class="init_phrase">
+        <div class="tag">
+            <p>{{ i }}</p>
+        </div>
+        <div class="buttons">
+            <button class="remove"><i class="fa-solid fa-trash-can"></i></button>
+            <button data-id="{{ i }}" class="add"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </li>
+{% else %}
+    <div class="init_phrase">rien de trouvé</div>
+{% endif %}
+
